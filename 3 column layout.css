@@ -1,0 +1,12 @@
+<!-- Grid: Basic 3 Column Layout -->
+<div class="grid">
+  <div>1</div><div>2</div><div>3</div>
+</div>
+
+<style>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+</style>
