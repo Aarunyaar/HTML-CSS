@@ -1,0 +1,16 @@
+<!-- Grid: Responsive Layout Using Media Query -->
+<div class="responsive">
+  <div>1</div><div>2</div><div>3</div>
+</div>
+
+<style>
+.responsive {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 600px) {
+  .responsive {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
