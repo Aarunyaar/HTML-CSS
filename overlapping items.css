@@ -1,0 +1,18 @@
+<!-- Grid: Overlapping Items -->
+<div class="overlap">
+  <div class="one"></div>
+  <div class="two"></div>
+</div>
+
+<style>
+.overlap {
+  display: grid;
+}
+.one, .two {
+  grid-area: 1 / 1;
+  width: 200px;
+  height: 200px;
+}
+.one { background: red; }
+.two { background: blue; margin: 40px; }
+</style>
