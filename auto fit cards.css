@@ -1,0 +1,12 @@
+<!-- Grid: Auto-Fit Cards -->
+<div class="cards">
+  <div>A</div><div>B</div><div>C</div><div>D</div>
+</div>
+
+<style>
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+</style>
