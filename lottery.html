@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #win{
+            color:green;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Lottery Draw</h3>
+    <button class="btn btn-primary" onclick="drawWin()">Select the Winner</button>
+    <p id="win"></p>
+
+    <div class="modal fade" id="winnerModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Lottery Winner</h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p id="modalWinner" class="text-danger"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var ticket=[10001, 10012, 10023, 10034, 10045, 10056, 10067,10078,10089,10090,10100];
+
+        function drawWin(){
+       
+        var randomIndex=Math.floor(Math.random()*ticket.length);
+        var winner=ticket[randomIndex];
+
+        document.getElementById("win").innerHTML="Winner Ticket Number is : " + winner;
+         document.getElementById("modalWinner").innerText = "Winner: " + winner;
+            $('#winnerModal').modal('show');
+        console.log("Winner is: " , winner);
+    }
+
+    </script>
+</body>
+</html>
