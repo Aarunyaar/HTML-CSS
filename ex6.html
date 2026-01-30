@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <label>Name:</label>
+        <input type="text" id="nameInput"><br><br>
+
+        <label>Email:</label>
+        <input type="email" id="emailInput"><br><br>
+
+        <label>Age:</label>
+        <input type="number" id="ageInput"><br><br>
+    </form>
+     <button onclick="printForm()">Print Form Data</button>
+
+    <h3>Output:</h3>
+    <div id="output"></div>
+
+    <script>
+        function printForm() {
+            let name = document.getElementById("nameInput").value;
+            let email = document.getElementById("emailInput").value;
+            let age = document.getElementById("ageInput").value;
+
+
+            let print = `
+                Name: ${name}<br>
+                Email: ${email}<br>
+                Age: ${age}
+            `;
+
+            document.getElementById("output").innerHTML = print;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Paragraphs are the building blocks of papers. </p>
+    <button onclick="printPara()">Print the paragraph</button>
+    <p id="text"></p>
+
+    <script>
+        function printPara(){
+            let print=document.getElementById("para").innerText;
+            alert(print);
+            console.log(print);
+            document.getElementById("text").innerHTML=print;
+        }
+    </script>
+</body>
+</html>
