@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page Responsive</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		 
+		body
+		{
+			background: linear-gradient(107deg, rgba(34, 133, 150, 1) 2%, rgba(1900, 187, 45, 1) 71%);
+			background-size: 100%;
+			
+		}
+		h1
+		{
+			color: orangered;             
+		}
+		button
+		{
+			color:white;
+			background-color: orangered;
+			width: 170px;
+			height:20px;
+		}
+		
+		
+		@media only screen and(max-width: 600px)
+		{
+			body
+			{
+				background-color: black;
+			}
+			body
+			{
+			background: linear-gradient(107deg, rgba(34, 133, 150, 1) 2%, rgba(1900, 187, 45, 1) 71%);;
+			}
+		h1
+		{
+			color: orangered;
+		}
+		button
+		{
+			color:white;
+			background-color: orangered;
+			width: 320px;
+			height:20px;
+		}
+
+		}
+		
+
+	</style>
+</head>
+<body>	
+
+		<form style="padding:125px;
+		margin-right:0px;
+		width:41%;
+		height:100vh;
+		background-color: white;
+		float:right">
+			<fieldset style="border:0px white">
+			<h1>Login Form</h1>
+			<label for="email">Email:</label><br>
+	  		<input type="email" id="email" name="email"><br>
+	  		<label for="pwd">Password:</label><br>
+	  		<input type="password" id="pwd" name="pwd"><br>
+	  		<input type = "radio" name = "subject" value = "save it"> Remember Me<br>
+	  		<button type="button" onclick="alert('Login successfully!')">Login</button>
+	  		</fieldset>
+		</form>
+
+</body>
+</html>
